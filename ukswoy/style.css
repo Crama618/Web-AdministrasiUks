@@ -1,0 +1,86 @@
+/* Reset default */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Body styling */
+body {
+    background: linear-gradient(135deg, #00b4db, #0083b0);
+    color: white;
+    text-align: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Container styling */
+.container {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 20px;
+    border-radius: 10px;
+    width: 350px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Animasi Fade In */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Menu styling */
+.menu {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+.menu li {
+    margin: 10px 0;
+}
+
+.menu li a {
+    display: block;
+    background: white;
+    color: #0083b0;
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Hover Animasi */
+.menu li a:hover {
+    background: #0083b0;
+    color: white;
+    transform: scale(1.1);
+}
+
+/* Animasi teks saat diarahkan */
+.welcome {
+    font-size: 22px;
+    font-weight: bold;
+    animation: textAnimation 3s infinite alternate;
+}
+
+/* Keyframes animasi teks */
+@keyframes textAnimation {
+    from {
+        letter-spacing: 1px;
+    }
+    to {
+        letter-spacing: 5px;
+    }
+}
